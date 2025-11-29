@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <title>SFHATNA</title>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--ملف css-->
+<style>
+
+    /*صندوق المحتوي*/
+
+    .elbody{
+        width: 320px;
+        max-width: 90%;
+        background-color:darkgrey;
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+    /*الصندوق الداخلي الاول*/
+
+    .face-book{
+        background-color:dodgerblue;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .face-book a{
+        text-decoration: none;
+        color: black;
+    }
+    .face-book :hover{
+        color: aliceblue;
+    }
+
+    /*الصندوق الداخلي الثاني*/
+
+
+    .groob-face-book{
+       background-color:lightpink;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+    .groob-face-book a{
+        text-decoration: none;
+        color: black;
+    }
+    .groob-face-book :hover{
+        color: aliceblue;
+    }
+
+    /*الصندوق الداخلي الثالث*/
+
+
+    .instgram{
+        background-color:mediumvioletred;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center; 
+    }
+    .instgram a{
+        text-decoration: none;
+        color: black;
+    }
+    .instgram :hover{
+        color: aliceblue;
+    }
+    /*===========================
+     استجابة لجميع الاجهزة
+    ============================*/
+
+    /*اولا شاشات التاب*/
+
+    @media (max-width:768px) {
+        .elbody{
+            width: 80%;
+            padding: 20px;
+        }  
+    }
+
+    /* ثانيا شاشات الموبايل */
+@media (max-width:480px) {
+   .elbody h1{
+    font-size: 20px;
+   } 
+}
+
+</style>
+
+ </head>
+
+    <body>
+
+        <!-- المحتوي -->
+
+        <div class="elbody">
+            <!--face book-->
+            <div class="face-book">
+                  <h1><a href="https://www.facebook.com/share/16SjETk4Jt/">Face BooK</a></h1>
+            </div >
+            <!--groob face book-->
+            <div class="groob-face-book">
+                   <h1><a href="https://www.facebook.com/share/g/1HjPkXauzo/?mibextid=wwXIfr" target="_blank">Groob face book</a></h1>
+            </div>
+            <!--instgram-->
+            <div class="instgram">
+                   <h1><a href="https://www.instagram.com/butterfly.brand.0?igsh=MWprc2dvbTd4Z2ZxYQ%3D%3D&utm_source=qr" target="_blank">Instgram</a></h1>
+            </div>
+        </div>
+    </body>
+</html>

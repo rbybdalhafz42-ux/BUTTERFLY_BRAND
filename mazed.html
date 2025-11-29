@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>MAZED</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+    body{
+        margin: 0;
+        background-color: aliceblue;
+        font-family: Arial, sans-serif;
+    }
+
+    /* صندوق المحتوى */
+    .mazed{
+        width: 320px;
+        max-width: 90%;
+        background-color: #ffffff;
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+    .font{
+        font-size: 40px;
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* تنسيق الرابط */
+    .link a {
+        color: #000;
+        padding: 10px 25px;
+        background-color: lime;
+        border-radius: 15px;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.3s;
+        font-size: 18px;
+    }
+
+    .link a:hover{
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* جعل النص أصغر للشاشات الصغيرة */
+    @media (max-width: 480px) {
+        .mazed {
+            width: 90%;
+            padding: 20px;
+        }
+
+        .font {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .link a {
+            font-size: 16px;
+            padding: 8px 20px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="mazed">
+    <h3 style="margin: 0;">للمزيد يمكنك التواصل معنا</h3>
+
+    <span class="font">⬇</span>
+
+    <h3 style="margin: 0;">01068561407</h3>
+
+    <h3 style="margin-top: 10px;">
+        <img src="png-clipart-whatsapp-whatsapp-thumbnail.png" width="22px">
+        او للتواصل وتساب
+    </h3>
+
+    <h3 class="link">
+        <a href="https://wa.me/201068561407" target="_blank">اضغط هنا</a>
+    </h3>
+</div>
+
+</body>
+</html>
